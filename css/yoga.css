@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,900;1,900&family=Playwrite+IE+Guides&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1d1d1d;
+  font-family: "Raleway";
+  line-height: 24px;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  background-color: #131313;
+}
+.logo,
+h2 {
+  font-family: "Montserrat";
+  font-size: 30px;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+#navbar a {
+  margin: 0 10px;
+}
+#navbar a:hover {
+  padding-bottom: 5px;
+  color: #fca311;
+  border-bottom: 2px solid #fca311;
+}
+.action-btn {
+  display: inline-block;
+  background-color: #fca311;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.action-btn:hover {
+  transform: scale(1.1);
+}
+.y-color {
+  color: #fca311;
+}
+.hero {
+  background: url(/image/yoga.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 50px;
+  display: flex;
+  justify-content: end;
+}
+.hero-content {
+  max-width: 550px;
+  min-height: 280px;
+  color: #ffffff;
+  padding: 30px;
+  background-color: #ffffff11;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+h1 {
+  font-weight: 900;
+  padding-left: 20px;
+  border-left: 5px solid #fca311;
+}
+.hero-content p {
+  padding: 20px 0;
+}
+h2 {
+  margin-bottom: 20px;
+  color: #fca311;
+}
+.bold {
+  font-weight: 700;
+}
+.benefit-section {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #fca311;
+  padding: 30px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.benefit-section h2 {
+  margin-bottom: 40px;
+}
+.ben-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+.ben-cards h2 {
+  font-size: 20px;
+  color: #fca311;
+  margin-bottom: 20px;
+}
+.ben-card {
+  background-color: #131313;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 20px;
+  transition: all 1s 0.1s ease-in-out;
+}
+.ben-table {
+  align-self: center;
+  margin-top: 30px;
+}
+table,
+th,
+td {
+  border: 1px solid #fca311;
+  background-color: #131313;
+  padding: 10px;
+  font-size: 18px;
+  transition: all 1s 0.2s ease-in-out;
+}
+
+td {
+  font-size: 14px;
+}
+.ben-card:hover {
+  transform: perspective(200px) rotateY(360deg) scale(1.2);
+}
+.ben-table:hover table {
+  transform: perspective(450px) rotateX(360deg);
+}
+.coaches {
+  max-width: 90%;
+  margin: 100px auto;
+  background-color: #131313;
+  padding: 50px 30px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.coaches-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.coach-card {
+  background-color: #1d1d1d;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.coach-card h3 {
+  margin: 20px 0;
+}
+.coach-card ul {
+  list-style: none;
+  font-size: 13px;
+}
+.coach-card img {
+  width: 100px;
+  height: 120px;
+  border-radius: 10px;
+  align-self: center;
+}
+.coach-card:hover {
+  transform: scale(0.9);
+}
+.support-chat {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+.chat-icon svg {
+  cursor: pointer;
+  max-width: 50px;
+  color: #1d1d1d;
+  border-radius: 50px;
+  background-color: #fca311;
+  padding: 3px;
+}
+footer {
+  margin-top: 50px;
+  border-top: 2px solid #fca311;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0 20px 0;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.social-icon a svg {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  transition: all 0.5s;
+  margin: 0 10px;
+}
+.social-icon:hover svg {
+  color: #fca311;
+  transform: scale(1.2);
+}
+@media (max-width: 1024px) {
+  .logo {
+    order: -2;
+  }
+  header ul {
+    margin: 10px;
+  }
+  .start-btn {
+    order: -1;
+  }
+  header ul {
+    flex-direction: column;
+  }
+  .benefit-section {
+    margin: 100px 50px;
+  }
+}
